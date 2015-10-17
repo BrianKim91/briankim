@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week4_Exercise</title>
+	<link rel="stylesheet" type="text/css" href="week4_exercise_style.css">
+
+	<script type="text/javascript">
+
+
+		function isNumberKey(evt){
+		    var charCode = (evt.which) ? evt.which : evt.keyCode
+		    return !(charCode > 31 && (charCode < 48 || charCode > 57));
+		}
+
+	</script>
+</head>
+<body>
+	<form class="regi" action="" method="POST">
+		<ul>
+			<li>
+				<h2>Simple User Validation Form</h2>
+				<span class="required_notification">Be aware of Required Field</span>
+			</li>
+
+			<li>
+				<label for="firstName">First Name</label>
+				<input type="text" id="firstName" required>
+			</li>
+
+			<li>
+				<label for="lastName">Last Name</label>
+				<input type="text" id="lastName" required>
+			</li>
+
+			<li>
+				<label for="email">Email</label>
+				<input type="email" id="email" placeholder="keepboy50@hotmail.com" required>
+				<span class="form_clue">abc1234@example.com</span>
+			</li>
+
+			<li>
+				<label for="phoneNumber">Phone Number</label> <!-- Try javascript to type only number -->
+				<input type="text" onkeypress="return isNumberKey(event);" required>
+				<span class="form_clue">Only accepts the number</span>
+			</li>
+
+			<li>
+				<label>Gender</label>
+				<input type="radio" id="male" name="gender" required>Male
+				<input type="radio" id="female" name="gender" required>Female
+			</li>
+
+			<li>
+				<label>Country</label>
+				<select required>
+					<option value="">Select</option>
+					<option value="korea">Korea</option>
+					<option value="United States">United States</option>
+					<option value="Japan">Japan</option>
+					<option value="China">China</option>
+					<option value="New Zealand">New Zealand</option>
+					<option value="India">India</option>
+					<option value="Philippines">Philippines</option>
+				</select>
+			</li>
+
+			<li>
+				<label>SNS</label>
+				<select multiple required>
+					<option value="Facebook">Facebook</option>
+					<option value="Twitter">Twitter</option>
+					<option value="LinkedIn">LinkedIn</option>
+					<option value="Instagram">Instagram</option>
+					<option value="Tumblr">Tumblr</option>
+					<option value="Google">Google+</option>
+					<option value="Foursquare">Foursquare</option>
+					<option value="Flickr">Flickr</option>
+					<option value="Velp">Velp</option>
+					<option value="Livejournal">Livejournal</option>
+				</select>
+				<span class="form_clue">Use 'Shift key' or 'drag the mouse' to select multiple choice</span>
+			</li>
+
+			<li>
+				<label>Perference of your language</label>
+				<input type="checkbox" name="html5">HTML5
+				<input type="checkbox" name="css3">CSS3
+				<input type="checkbox" name="javascript">JavaScript
+			</li>
+
+			<li>
+				<label for="website">Website</label>
+				<input type="url" id="website" placeholder="http://keepboy50.dothome.co.kr" required pattern="(http|https)://.+">
+				<span class="form_clue">http://www.example.com</span>
+			</li>
+
+			<li>
+				<label>Message</label>
+				<textarea cols="40" rows="6" required></textarea>
+			</li>
+
+			<li>
+				<button class="submit" value="submit">Submit</button>
+
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
