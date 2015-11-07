@@ -161,7 +161,7 @@ a:after {
 #headerwrap {
 	
 	padding-top: 60px;
-    background-image: url("/img/bg_sky.jpg");
+    background-image: url("../img/bg_sky.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
