@@ -1,25 +1,17 @@
 body {
-	margin: auto;
-	width: 50%;
-	font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
-	
-
-*:focus {
-	outline: none;
+    margin: auto;
+    width: 50%;
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    background-color: #ff9b54;
 }
 
 li {
-	list-style-type: none;
+    list-style: none;
+    font-size: 16px;
 }
 
-/* Class Selector */
-
-.regi h2, .regi label {
-	font-family:Georgia, Times, "Times New Roman", serif;
-}
-
-.form_clue, .required_notification {
-	font-size: 11px;
+.textRed {
+    color: red;
 }
 
 .regi ul {
@@ -30,74 +22,73 @@ li {
     padding:0px;
 }
 .regi li{
-    padding:10px; 
-    border-bottom:1px solid #eee; 
+    padding:15px; 
     position:relative;
+    border: 1px solid black;
 }
 
 .regi li:first-child, .regi li:last-child { /* Emphasising the start & end border line */
-	border-bottom: 1px solid #777;
-}
+    border-bottom: 1px solid red;
 
-.regi h2 {
-    margin:0;
-    display: inline;
-}
-.required_notification { /* needs to be fixed */
-    color:#d45252; 
-    margin: 15px 0 0 0; 
-    display:inline;
-    float:right;
 }
 
 /* Styling the form validation*/
 
 .regi label {
-    
+
+    width:300px;
     margin-top: 3px;
     display:inline-block;
     float:left;
     padding:3px;
 }
 
-.regi input[type=text], input[type=email], input[type=tel], input[type=url]  {
-	height:20px; 
-	width:220px; 
-	padding:5px 8px;
-} 
 
 .regi input[type=radio], input[type=checkbox] {
-	height: 17px;
-	width: 40px;
-	margin-top: 5px;
+    height: 17px;
+    width: 40px;
+    margin-top: 5px;
+}
+
+.regi input[type=text], input[type=email], input[type=tel] {
+    width:300px; 
+    padding:5px 8px;
+} 
+
+.regi input[type=url] {
+    width: 300px;
+    padding: 5px 8px;
+}
+
+.regi input[type=radio], input[type=checkbox] {
+    height: 17px;
+    width: 40px;
+    margin-top: 3px;
 }
 
 
-
 .regi textarea {padding:8px; width:300px;}
-.regi button {margin-left:205px;}
+.regi button {margin-left:175px;}
 
-
-
-
-
-/* Styling additional HTML (Modern browser compatibility) */
 
 .regi input[type=text], input[type=email], input[type=tel], input[type=url], textarea  {
-	border:1px solid #aaa;
+    border:1px solid #aaa;
     box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
     border-radius:2px; 
 } 
 
 .regi input:focus[type=text], input:focus[type=email], input:focus[type=tel], input:focus[type=url], textarea:focus  {
-	background: #fff; 
+    background: #fff; 
     border:1px solid #555; 
     box-shadow: 0 0 3px #aaa;
 } 
 
 
+
+
+
 /* Button Style */
-button.submit {
+button.submit, button[type=reset]{
     background-color: #68b12f;
     background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
     background: -webkit-linear-gradient(top, #68b12f, #50911e);
@@ -123,6 +114,13 @@ button.submit {
     text-align: center;
     text-shadow: 0 -1px 0 #396715;
 }
+<<<<<<< HEAD:week5_exercise_style.css
+button.submit:hover, button[type=reset]:hover{
+    opacity:.85;
+    cursor: pointer; 
+}
+button.submit:active button[type=reset]:active {
+=======
 
 button.submit:hover {
     opacity:.85;
@@ -130,6 +128,7 @@ button.submit:hover {
 }
 
 button.submit:active {
+>>>>>>> master:week4_exercise_style.css
     border: 1px solid #20911e;
     box-shadow: 0 0 10px 5px #356b0b inset; 
     -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
@@ -157,7 +156,7 @@ button.submit:active {
 }
 
 .regi input:required, .regi textarea:required  {
-	background: #fff url(https://www.signup4.net/Images/Required/RedAsterisk.gif) no-repeat 98% center;
+    background: #fff url(https://www.signup4.net/Images/Required/RedAsterisk.gif) no-repeat 98% center;
 }
 
 .regi input:focus:invalid[type=text], input:focus:invalid[type=email], input:focus:invalid[type=tel], input:focus:invalid[type=url], textarea:focus:invalid {
@@ -198,4 +197,3 @@ button.submit:active {
 .regi input:focus + .form_clue {display: inline;}
 .regi select:focus + .form_clue {display: inline; background: #28921f;}
 .regi input:required:valid + .form_clue {background: #28921f;} /* change form hint color when valid */
-
