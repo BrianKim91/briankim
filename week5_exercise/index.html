@@ -31,19 +31,19 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times "></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick= $("#menu-close").click();>Brian Kim</a>
+                <a href="#top" onclick=$ ( "#menu-close").click();>Brian Kim</a>
             </li>
             <li>
-                <a href="#about" onclick= $("#menu-close").click();>About</a>
+                <a href="#about" onclick=$ ( "#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#skills" onclick= $("#menu-close").click();>Skills</a>
+                <a href="#skills" onclick=$ ( "#menu-close").click();>Skills</a>
             </li>
             <li>
-                <a href="#portfolio" onclick= $("#menu-close").click();>Portfolio</a>
+                <a href="#portfolio" onclick=$ ( "#menu-close").click();>Portfolio</a>
             </li>
             <li>
-                <a href="#contact" onclick= $("#menu-close").click();>Contact</a>
+                <a href="#contact" onclick=$ ( "#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
@@ -126,7 +126,6 @@
         <div class="container">
             <div class="row">
                 <h1><div class="alert alert-success centered radius" role="alert">Web-Development skills</div></h1>
-            </div>
             <div class="col-lg-6">
                 <br>
                 <br>
@@ -156,84 +155,17 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <br>
-                <br>
-                <!-- ACCORDION -->
-                <div class="accordion ac" id="accordion2">
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-		                        Semantic HTML5
-		                        </a>
-                        </div>
-                        <!-- /accordion-heading -->
-                        <div id="collapseOne" class="accordion-body collapse in">
-                            <div class="accordion-inner">
-                                <p>Expert in HTML5 and use proper way of syntax regarding to semantic-method which is modern way to reveal the code for User-friendly web.</p>
-                            </div>
-                            <!-- /accordion-inner -->
-                        </div>
-                        <!-- /collapse -->
-                    </div>
-                    <!-- /accordion-group -->
-                    <br>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-		                        CSS3 based framework
-		                        </a>
-                        </div>
-                        <div id="collapseTwo" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <p>Using bootstrap based on CSS3 framework to build a web accurately and faster.</p>
-                            </div>
-                            <!-- /accordion-inner -->
-                        </div>
-                        <!-- /collapse -->
-                    </div>
-                    <!-- /accordion-group -->
-                    <br>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-		                        Awesome Support 
-		  <!-- will have a progress bar in here // Remote service, Ongoing support,  -->
-		                        </a>
-                        </div>
-                        <div id="collapseThree" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <p>JavaScript framework can help tremendously building a website to be more functional and effectively producing the contents.</p>
-                            </div>
-                            <!-- /accordion-inner -->
-                        </div>
-                        <!-- /collapse -->
-                    </div>
-                    <!-- /accordion-group -->
-                    <br>
-                    <div class="accordion-group">
-                        <div class="accordion-heading">
-                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">
-		                        Version control
-		                        </a>
-                        </div>
-                        <div id="collapseFour" class="accordion-body collapse">
-                            <div class="accordion-inner">
-                                <p>Always be ready for the type of any various work-environment that has already been prepared for working with team-members.</p>
-                            </div>
-                            <!-- /accordion-inner -->
-                        </div>
-                        <!-- /collapse -->
-                    </div>
-                    <!-- /accordion-group -->
-                    <br>
-                </div>
-                <!-- Accordion -->
             </div>
-        </div>
+
+            <div class="col-lg-6">
+            </div>
+           
+            </div><!-- Accordion -->
+        
+    
     </div>
     <!--/ .container -->
-    </div>
+   </div>
     <!--/ #skills -->
     <!-- Original -->
     <section id="portfolio" name="portfolio"></section>
@@ -395,7 +327,7 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
 
-        $(function() {
+    $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
